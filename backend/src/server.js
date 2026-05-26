@@ -31,7 +31,7 @@ app.use(helmet({
 // ── CORS — allow only your frontend ───────────────────────────────────────────
 const allowedOrigins = [
   process.env.FRONTEND_URL || "http://localhost:5173",
-  "http://localhost:3000", // CRA fallback
+  "https://tradefxbook-alpha.vercel.app", // CRA fallback
 ];
 app.use(cors({
   origin: (origin, callback) => {
